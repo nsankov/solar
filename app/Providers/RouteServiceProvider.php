@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Comment;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +32,7 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        Route::model('comment', Comment::class);
 
         parent::boot();
     }
