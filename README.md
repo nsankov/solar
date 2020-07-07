@@ -1,5 +1,5 @@
 ### Prebuild
-Please install composer
+Please install composer.phar in project
      
 ### Build example
      docker-compose build
