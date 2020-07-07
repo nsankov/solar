@@ -4,7 +4,8 @@ Please install composer
 ### Build example
      docker-compose build
      docker-compose up -d
-     docker exec -it solar /ban/bash && ./composer.phar install && cp .env.example .env && sed -i "s/DB_HOST=127.0.0.1/DB_HOST=solardb/g" .env && php artisan key:generate && php artisan migrate && php artisan db:seed && php artisan test
+     docker exec -it solar /ban/bash 
+     root@aa5414d067a1:/var/www/html# ./composer.phar install && cp .env.example .env && sed -i "s/DB_HOST=127.0.0.1/DB_HOST=solardb/g" .env && php artisan key:generate && php artisan migrate && php artisan db:seed && php artisan test
 
 
 ### API
